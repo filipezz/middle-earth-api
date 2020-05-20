@@ -10,6 +10,13 @@ melhores lugares para se viver. Usuários cadastrados e autenticados podem geren
 - MySQL
 - Node
 
+## Variáveis de ambiente
+
+Crie um arquivo ```.env```, seguindo o template do arquivo ```.env.example``` desse modo
+![Sem título](https://user-images.githubusercontent.com/52511902/82506056-2fddd480-9ad5-11ea-8b43-c956f9a2134f.png)
+
+***PS: O nome do banco de dados precisa ser "middle_bnb"***
+
 
 ### Rodando localmente
 

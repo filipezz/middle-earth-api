@@ -45,6 +45,8 @@ $ npm run resetDatabase
 ```
 ## Rotas
 
+Caso opte por usar a aplicação via postman ou insomnia
+
 ### Registro de usuário
 
 
@@ -57,12 +59,16 @@ POST | /users | - | `{ name, email, password }` |
 
 Método | URI | Parâmetros | Body | Descrição
 -------|-----|-----------|------|-----------
-POST | /sessions | - | `{ email, password }` | 
+POST | /sessions | - | `{ email, password }` | A API irá te responder com o seu usuário e um token jwt. Esse token precisa ser enviado nas rotas que precisam de autenticação.
 
 
 ### CRUD Lugares
 
 * Rota apenas para Administradores. <strong>Requer autenticação</strong>
+
+Exemplo de header para autenticação:
+
+```authorization: Bearer {{token}}```
 
 Método | URI | Parâmetros | Body | Descrição
 -------|-----|-----------|------|-----------

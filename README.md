@@ -3,7 +3,7 @@
 Api do desafio proposto pela PlayerUm. O projeto conta com CRUD de lugares famosos da Terra Média. Usuários podem votar nos 
 melhores lugares para se viver. Usuários cadastrados e autenticados podem gerenciar lugares, criando, editando e deletando os mesmos.
 
-
+Repositório para o front-end https://github.com/filipezz/middle-earth-front
 
 ## :information_source: Requisitos
 

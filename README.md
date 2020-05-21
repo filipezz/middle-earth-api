@@ -30,7 +30,7 @@ $ npm install
 $ npm run createTables
 
 # Rodando em http://localhost:3333
-$ npm start
+$ npm run dev
 ```
 ### Outros comandos
 

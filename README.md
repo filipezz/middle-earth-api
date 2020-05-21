@@ -73,9 +73,9 @@ Exemplo de header para autenticação:
 Método | URI | Parâmetros | Body | Descrição
 -------|-----|-----------|------|-----------
 GET | /places | - | - | Resgata todos os lugares registrado pelo usuário logado
-POST | /places | - | `{ name, image_id }`
-PUT | /places/:id | place_id | `{ name, image_id }`
-DELETE | /places/:id | places_id | 
+POST | /places | - | `{ name, image_id }` | Rota de cadastro de um novo lugar
+PUT | /places/:id | place_id | `{ name, image_id }` | Rota para editar um lugar
+DELETE | /places/:id | places_id | - | Rota para deletar um lugar
 
 ### Likes
 

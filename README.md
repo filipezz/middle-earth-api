@@ -43,3 +43,49 @@ $ npm run dropSchema
 $ npm run resetDatabase
 
 ```
+## Rotas
+
+### Registro de usuário
+
+
+Método | URI | Parêmtros | Body | Descrição
+-------|-----|-----------|------|-----------
+POST | /users | - | `{ name, email, password }` | 
+
+### Sessões
+
+
+Método | URI | Parêmtros | Body | Descrição
+-------|-----|-----------|------|-----------
+POST | /sessions | - | `{ email, password }` | 
+
+
+### CRUD Lugares
+
+* Rota apenas para Administradores. <strong>Requer autenticação</strong>
+
+Método | URI | Parêmtros | Body | Descrição
+-------|-----|-----------|------|-----------
+GET | /places | - | - | Resgata todos os lugares registrado pelo usuário logado
+POST | /places | - | `{ name, image_id }`
+PUT | /places/:id | place_id | `{ name, image_id }`
+DELETE | /places/:id | places_id | 
+
+### Likes
+
+Método | URI | Parêmtros | Body | Descrição
+-------|-----|-----------|------|-----------
+PUT | /places/:id/like | places_id | - | Rota que adiciona likes ao lugar referenciado
+
+
+### Imagens
+
+Método | URI | Parêmtros | Body | Descrição
+-------|-----|-----------|------|-----------
+POST | /files | - | `Multipart form: File` | Rota de upload de imagens para serem referenciadas na criação/edição de Lugares
+
+### Lugares
+
+Método | URI | Parêmtros | Body | Descrição
+-------|-----|-----------|------|-----------
+POST | /browse | - | - | Rota que busca todos os lugares cadastrados. Não é necessária autenticação
